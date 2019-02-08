@@ -16,7 +16,7 @@ if (! empty($_GET["url"])) {
 
     $result = "URL:" . $url;
 
-    $myfile = fopen("/files/upload.txt","w") or die("Unable to open file");
+    $myfile = fopen("/upload.txt","w") or die("Unable to open file");
     fwrite($myfile, $result);
     fclose($myfile);
     echo '<div class="alert alert-success" role="alert">
